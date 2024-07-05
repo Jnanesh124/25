@@ -5,7 +5,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7419752629:AAHkFNHb_L30-nGRDr4Ky94ZxbvHclPvjHU")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6570037316:AAFv5dv2LjbVdjwFDFdAN9N1ezSVMmBqVMI")
 
 APP_ID = int(os.environ.get("APP_ID", "22231458"))
 
@@ -22,7 +22,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "6331847574"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ottmovies:ottmovies@cluster0.bejrjkt.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://easyeasy740:easyeasy740@cluster0.1shrvws.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #Shortner (token system) 
