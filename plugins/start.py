@@ -66,7 +66,7 @@ async def start_command(client: Client, message: Message):
             await update_verify_status(id, is_verified=True, verified_time=time.time())
             if verify_status["link"] == "":
                 reply_markup = None
-            await message.reply(f"Your token successfully verified and valid for: 24 Hour", reply_markup=reply_markup, protect_content=False, quote=True)
+            await message.reply(f"Your token successfully verified ✅ and valid for: 24 Hour ⌛️", reply_markup=reply_markup, protect_content=False, quote=True)
 
         elif len(message.text) > 7 and verify_status['is_verified']:
             try:
@@ -128,7 +128,7 @@ async def start_command(client: Client, message: Message):
                 except:
                     pass
 
-            SD = await message.reply_text("u want more video join here :- https://t.me/+rngXtnHMa_k3NjY9")
+            SD = await message.reply_text("🍿 Join Backup Channel :- @ROCKERSBACKUP\n\n🔞 Join Adult Channel :- t.me/+P-wgbt_2dlU3MTM1")
             await asyncio.sleep(300)
 
             for snt_msg in snt_msgs:
@@ -166,10 +166,10 @@ async def start_command(client: Client, message: Message):
                 await update_verify_status(id, verify_token=token, link="")
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API,f'https://telegram.dog/{client.username}?start=verify_{token}')
                 btn = [
-                    [InlineKeyboardButton("𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞", url=link)],
-                    [InlineKeyboardButton('𝐇𝐨𝐰 𝐓𝐨 𝐨𝐩𝐞𝐧 𝐭𝐡𝐢𝐬 𝐥𝐢𝐧𝐤', url=TUT_VID)]
+                    [InlineKeyboardButton("📥 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 📥", url=link)],
+                    [InlineKeyboardButton('✅ 𝐇𝐨𝐰 𝐓𝐨 𝐨𝐩𝐞𝐧 𝐭𝐡𝐢𝐬 𝐥𝐢𝐧𝐤 ✅', url=TUT_VID)]
                 ]
-                await message.reply(f"u need to verify below link then u get direct sex video\n\nclick below link and verify", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
+                await message.reply(f"🫵 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 𝐭𝐨 𝐯𝐞𝐫𝐢𝐟𝐲 𝐨𝐧𝐞 𝐭𝐢𝐦𝐞 𝐭𝐡𝐞𝐧 𝐮 𝐜𝐚𝐧 𝐠𝐞𝐭 𝐚𝐥𝐥 𝐌𝐨𝐯𝐢𝐞 𝐅𝐢𝐥𝐞 𝐢𝐧 ⏰ 𝟐𝟒𝐡𝐨𝐮𝐫𝐬 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐀𝐝𝐬🎟\n\n👇 𝐂𝐥𝐢𝐜𝐤 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐕𝐞𝐫𝐢𝐟𝐲 👇", reply_markup=InlineKeyboardMarkup(btn), protect_content=False, quote=True)
 
 
 
@@ -189,11 +189,8 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(
-                "• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •",
-                url = client.invitelink)
-        ]
-    ]
+            InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink),
+        ]]
     try:
         buttons.append(
             [
